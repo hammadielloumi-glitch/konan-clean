@@ -1,0 +1,11 @@
+{
+  "version": "13.0",
+  "mode": "full-auto",
+  "project": "KONAN",
+  "team": {
+    "ChatGPT": true,
+    "MGX.dev": true,
+    "Cursor": true,
+    "Supabase": true
+  }
+}
