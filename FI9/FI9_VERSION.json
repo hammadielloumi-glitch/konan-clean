@@ -1,11 +1,12 @@
 {
-  "version": "13.0",
+  "version": "FI9_NAYEK_v13",
   "mode": "full-auto",
-  "project": "KONAN",
   "team": {
-    "ChatGPT": true,
-    "MGX.dev": true,
-    "Cursor": true,
-    "Supabase": true
-  }
+    "ChatGPT": "OUI",
+    "MGX.dev": "OUI",
+    "Cursor": "OUI",
+    "Supabase": "OUI"
+  },
+  "validation_humaine": "OBLIGATOIRE",
+  "description": "Activation FI9_NAYEK v13 pour projets KING – exécution synchronisée avec MGX.dev et Cursor."
 }
