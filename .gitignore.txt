@@ -1,0 +1,27 @@
+# FI9IGNORE
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/*.log
+**/*.tmp
+**/*.bak
+**/*.sql
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+
+node_modules/
+.next/
+.expo/
+dist/
+build/
+.vscode/
+.idea/
+*.zip
+*.tar
+*.gz
+*.rar
+
+.env
+.env.*

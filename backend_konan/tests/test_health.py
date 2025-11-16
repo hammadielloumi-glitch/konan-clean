@@ -1,0 +1,12 @@
+# tests/test_health.py
+import pytest
+from httpx import AsyncClient, ASGITransport
+from app.main import app
+
+@pytest.mark.anyio
+async def test_health():
+    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
+        r = await client.get("/health")
+        assert r.status_code == 200
+        j = r.json()
+        assert j.get("status") == "ok"

@@ -1,0 +1,43 @@
+# === Web / API ===
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+gunicorn[uvicorn]==21.2.0  # ✅ FI9_NAYEK : Production server
+
+# === Base de données ===
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.9
+alembic==1.13.3
+
+# === Authentification / Sécurité ===
+PyJWT==2.8.0
+passlib[bcrypt]==1.7.4
+email-validator==2.1.1
+bcrypt==4.0.1
+
+# === Configuration ===
+pydantic==2.9.2
+pydantic-settings==2.4.0
+python-dotenv==1.0.1
+python-multipart==0.0.9
+python-jose[cryptography]==3.3.0
+
+# === Tâches asynchrones / Cache ===
+celery==5.3.6
+redis==5.0.3
+
+# === IA / Vectors / NLP ===
+chromadb==0.5.3
+openai==1.51.0
+numpy==1.26.4
+langdetect==1.0.9
+pgvector==0.4.1
+
+# === Outils ===
+requests==2.32.3
+httpx==0.27.2
+
+# === Tests / Débogage ===
+pytest==8.3.3
+pytest-cov==4.1.0
+trio==0.26.2
+

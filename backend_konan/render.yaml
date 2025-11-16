@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: konan-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app.main:app --bind 0.0.0.0:$PORT --workers 4 --worker-class uvicorn.workers.UvicornWorker --timeout 120
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: DATABASE_URL
+        sync: false  # À configurer dans Render Dashboard
+      - key: SECRET_KEY
+        generateValue: true
+      - key: JWT_SECRET
+        generateValue: true
+      - key: OPENAI_API_KEY
+        sync: false  # À configurer dans Render Dashboard
+      - key: APP_ENV
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      - key: CORS_ALLOW_ORIGINS
+        sync: false  # À configurer selon frontend URL
+      - key: CHROMA_DB_DIR
+        value: ./chroma_store
+      - key: CHROMA_DB_DIR_LAWS
+        value: ./chroma_store_laws
+      - key: KONAN_TEST_MODE
+        value: "0"
+    healthCheckPath: /health
+    autoDeploy: true
+
+databases:
+  - name: konan-db
+    databaseName: konan_db
+    user: konan_user
+    plan: free  # ou starter/pro pour production
+

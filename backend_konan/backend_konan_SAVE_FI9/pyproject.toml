@@ -1,0 +1,15 @@
+[project]
+name = "konan-backend"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi", "uvicorn[standard]", "pydantic", "psycopg2-binary",
+  "sqlalchemy", "alembic", "pgvector", "httpx", "python-dotenv"
+]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-asyncio", "pytest-cov", "anyio", "faker"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["app"]
+addopts = "-q --disable-warnings --maxfail=1"

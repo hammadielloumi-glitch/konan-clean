@@ -1,0 +1,27 @@
+﻿[
+    {
+        "Endpoint":  "Health",
+        "Status":  "âœ… OK",
+        "Detail":  "{\r\n    \"status\":  \"ok\",\r\n    \"message\":  \"KONAN API opÃ©rationnelle\"\r\n}"
+    },
+    {
+        "Endpoint":  "Test_DB",
+        "Status":  "âœ… OK",
+        "Detail":  "{\r\n    \"status\":  \"DB OK\",\r\n    \"timestamp\":  \"2025-10-23 21:02:26.735000+00:00\"\r\n}"
+    },
+    {
+        "Endpoint":  "Memory_Test",
+        "Status":  "âœ… OK",
+        "Detail":  "{\r\n    \"status\":  \"memory active\"\r\n}"
+    },
+    {
+        "Endpoint":  "Chat",
+        "Status":  "âŒ FAIL",
+        "Detail":  "Le serveur distant a retourné une erreur : (500) Erreur interne du serveur."
+    },
+    {
+        "Endpoint":  "Laws_Search",
+        "Status":  "âŒ FAIL",
+        "Detail":  "Le délai de l’opération a expiré."
+    }
+]
